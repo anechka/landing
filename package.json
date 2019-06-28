@@ -1,0 +1,32 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Pug + Stylus landing",
+  "main": "src/js/index.js",
+  "scripts": {
+    "start": "parcel src/index.pug",
+    "watch": "parcel watch src/index.pug || exit 0",
+    "build": "parcel build src/index.pug",
+    "clean": "rm -r dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anechka/landing.git"
+  },
+  "keywords": [
+    "pug",
+    "stylus",
+    "vue"
+  ],
+  "author": "Anna Novikova",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anechka/landing/issues"
+  },
+  "homepage": "https://github.com/anechka/landing#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "pug": "^2.0.4",
+    "stylus": "^0.54.5"
+  }
+}
