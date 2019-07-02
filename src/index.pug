@@ -5,353 +5,382 @@ html(lang="en")
         link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
         link(href="css/css.styl", rel="stylesheet")
     body
-        .container-fluid
-            header
-                nav.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light
-                    a.navbar-brand(href='#')
-                        img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819856890e790_asset%2039.svg", style="width: 105px")
-                    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
-                        span.navbar-toggler-icon
-                    #navbarCollapse.collapse.navbar-collapse
-                        ul.navbar-nav.ml-auto
-                            li.nav-item.dropdown
-                                a#navbarDropdown1.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                                    | Product
-                                .dropdown-menu(aria-labelledby='navbarDropdown1')
-                                    .content-dropdown-menu.d-flex
-                                        .left-col-content
-                                            a.dropdown-item(href='#') Stability Management
-                                            a.dropdown-item(href='#') Stability Score
-                                        .right-col-content
-                                            a.dropdown-item(href='#') Platforms
-                                            a.dropdown-item(href='#') Integrations
-                            li.nav-item.dropdown
-                                a#navbarDropdown2.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                                    | Solutions
-                                .dropdown-menu(aria-labelledby='navbarDropdown2')
-                                    .content-dropdown-menu.d-flex
-                                        .left-col-content
-                                            a.dropdown-item(href='#') Software Engineer
-                                            a.dropdown-item(href='#') Engineering Manager
-                                        .right-col-content
-                                            a.dropdown-item(href='#') Web
-                                            a.dropdown-item(href='#') Mobile
-                            li.nav-item.dropdown
-                                a#navbarDropdown3.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                                    | Customers
-                                .dropdown-menu(aria-labelledby='navbarDropdown3')
-                                    .content-dropdown-menu.d-flex
-                                        .left-col-content
-                                            a.dropdown-item(href='#') Customers
-                                            a.dropdown-item(href='#') Customer Stories
-                                        .right-col-content
-                                            a.dropdown-item(href='#') Action
-                                            a.dropdown-item(href='#') Another action
-                            li.nav-item
-                                a.nav-link(href='#') Pricing
-                            li.nav-item.dropdown
-                                a#navbarDropdown4.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                                    | Resources
-                                .dropdown-menu(aria-labelledby='navbarDropdown4')
-                                    .content-dropdown-menu.d-flex
-                                        .left-col-content
-                                            a.dropdown-item(href='#') Action
-                                            a.dropdown-item(href='#') Another action
-                                        .right-col-content
-                                            a.dropdown-item(href='#') Action
-                                            a.dropdown-item(href='#') Another action
-                            li.nav-item
-                                a.nav-link(href='#') Docs
-                            li.nav-item
-                                a.nav-link(href='#') Sign in
+        header
+            nav.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light.header-nav
+                a.navbar-brand(href='#')
+                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819856890e790_asset%2039.svg", style="width: 105px")
+                button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarCollapse.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+
+                        li.nav-item.dropdown
+                            a#navbarDropdown1.nav-link.dropdown-toggle.link-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                | Product
+                            .dropdown-menu(aria-labelledby='navbarDropdown1')
+                                .content-dropdown-menu.d-flex
+                                    .left-col-content
+                                        a.dropdown-item(href='#') Stability Management
+                                        a.dropdown-item(href='#') Stability Score
+                                        a.dropdown-item(href='#') Search and Segment
+                                        a.dropdown-item(href='#') On-Premise
+                                    .right-col-content
+                                        a.dropdown-item(href='#') Platforms
+                                        a.dropdown-item(href='#') Integrations
+                                        a.dropdown-item(href='#') Security
+                                        a.dropdown-item(href='#') Why Bugsnag?
+
+                        li.nav-item.dropdown
+                            a#navbarDropdown2.nav-link.dropdown-toggle.link-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                | Solutions
+                            .dropdown-menu(aria-labelledby='navbarDropdown2')
+                                .content-dropdown-menu.d-flex
+                                    .left-col-content
+                                        span BY ROLE:
+                                        a.dropdown-item(href='#') Software Engineer
+                                        a.dropdown-item(href='#') Engineering Manager
+                                    .right-col-content
+                                        a.dropdown-item(href='#') Web
+                                        a.dropdown-item(href='#') Mobile
+
+                        li.nav-item.dropdown
+                            a#navbarDropdown3.nav-link.dropdown-toggle.link-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                | Customers
+                            .dropdown-menu(aria-labelledby='navbarDropdown3')
+                                .content-dropdown-menu.d-flex
+                                    .left-col-content
+                                        a.dropdown-item(href='#') Customers
+                                        a.dropdown-item(href='#') Customer Stories
+                                    .right-col-content
+                                        a.dropdown-item(href='#') Action
+                                        a.dropdown-item(href='#') Another action
+
+                        li.nav-item
+                            a.nav-link(href='#') Pricing
+                        li.nav-item.dropdown
+                            a#navbarDropdown4.nav-link.dropdown-toggle.link-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                | Resources
+                            .dropdown-menu(aria-labelledby='navbarDropdown4')
+                                .content-dropdown-menu.d-flex
+                                    .left-col-content
+                                        a.dropdown-item(href='#') Action
+                                        a.dropdown-item(href='#') Another action
+                                    .right-col-content
+                                        a.dropdown-item(href='#') Action
+                                        a.dropdown-item(href='#') Another action
+
+                        li.nav-item
+                            a.nav-link.link-dropdown(href='#') Docs
+                        li.nav-item
+                            a.nav-link.link-dropdown(href='#') Sign in
 
 
-                        a.nav-link.btn.btn-primary.btn-lg(href='#' tabindex='-1' aria-disabled='true') Get started
+                    a.nav-link.btn-medium.btn-dark-blue(href='#' tabindex='-1' aria-disabled='true') Get started
 
 
-                .hero(style="background: blue; padding-top: 200px; height: 600px")
-                    .container
-                        h1.text-center Stability monitoring for all your apps
-                        p.text-center 3 minute installation · Try all features for 14 days · No credit card required
-
-                .cards-content(style="position: relative; margin-top: -250px")
-                    .container
-                        .row
-                            .col-12
-                                .cards-menu-tabs
-                                    a(href="#") Monthly
-                                    a(href="#") Annually
-                        .row
-                            .col-md-12.col-lg-4
-                                .card.text-center
-                                    .card-body.card-content
-                                        h5.card-title Lite
-                                        span Starting at
-                                        span $0
-                                        span per month
-                                        p.card-text Basic error detection and alerting
-                                        a.btn.btn-primary.btn-lg(href='#') Free trial
-                                        a(href="") Calculate your price
-                                        .divider
-                                        h6 Features
-                                        ul.list
-                                            li.d-flex.align-items-center
-                                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg", style="width: 15px; margin-right: 8px")
-                                                span Unlimited monitored apps
-                                            li Error detection inbox and search
-                                            li Automatic error diagnostics
-                                            li User interaction breadcrumbs
-                                            li Jira issue synchronization
-                                            li Email, Slack, and PagerDuty alerting
-                            .col-md-12.col-lg-4
-                                .card.text-center
-                                    .card-body.card-content
-                                        h5.card-title Standard
-                                        span Starting at
-                                        span $59
-                                        span per month
-                                        p.card-text Stability monitoring for application health
-                                        a.btn.btn-primary.btn-lg(href='#') Free trial
-                                        a(href="") Calculate your price
-                                        .divider
-                                        h6 Lite features plus
-                                        ul.list
-                                            li Real-time application stability score
-                                            li Release stability dashboard
-                                            li A/B test & experiment stability metrics
-                                            li Key account experience segmentation
-                                            li Custom data segments & pivots
-                                            li Okta, OneLogin & SAML SSO
-                                            li Splunk and Amazon SQS support
-
-                            .col-md-12.col-lg-4
-                                .card.text-center
-                                    .card-body.card-content
-                                        h5.card-title Enterprise
-                                        span Contact Us
-                                        p.card-text Custom plans for higher volumes and larger teams
-                                        a.btn.btn-primary.btn-lg(href='#') Free trial
-                                        a(href="") Calculate your price
-                                        .divider
-                                        h6 Standard features plus
-                                        ul.list
-                                            li Priority support
-                                            li Onboarding and training
-                                            li On-premise optional with scaling via HA clustering
-                                            li HIPAA/PCI/PHI compliance
-                                            li Custom data retention
-                                            li Burst protection & event scaling
-                                            li Custom license terms (MSA, SLA)
-
-            section(style="padding-top: 150px; padding-bottom: 150px")
+            .hero
                 .container
-                    .row.d-flex.flex-column.align-items-center
-                        img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819ee6590e795_gold_accent_centered-f5f2049b.svg", style="width: 70px")
-                        h2 Trusted by over 5,000 of the world's best engineering teams
+                    h1.text-center Stability monitoring for all your apps
+                    p.text-center 3 minute installation · Try all features for 14 days · No credit card required
 
-                    .row.justify-content-center
-                        .logo-company
-                            img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08196a3490e82f_airbnb-logo.png")
-                        .logo-company
-                            img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d2290e826_mailchimp-logo.png")
-                        .logo-company
-                            img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197a2d90e82e_oracle-logo.png")
-                        .logo-company
-                            img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819a3bc90e830_square-logo.png")
-                        .logo-company
-                            img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd081946bd90e824_lyft-logo.png")
-                        .logo-company
-                            img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819c1f290e827_pagerduty-logo.png")
-                    .row
-                        .col.text-center
-                            a.btn.btn-primary.btn-lg(href='#') See how our customers use bugsnag
-
-            section.pricing-plans
+            .cards-container
                 .container
-
-                    h2 Pricing plans
-
                     .row
-                        .col-6.d-flex-column
-                            // Error monitoring & diagnostic tools
-                            .sticky-block
-                                .row.pricing-content
-                                .row.pricing-content
-                                    .col.d-flex.align-items-center
-                                        img.pricing-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819e5b490e7d7_code-cc32753f.svg")
-                                        span Error monitoring & diagnostic tools
+                        .col-12
+                            .cards-menu-tabs
+                                a(href="#") Monthly
+                                a.link-decorated(href="#") Annually
+                    .row.no-gutters
+                        .col-md-12.col-lg-4
+                            .card.text-center.default-card
+                                .card-body.card-content
+                                    h5.card-title.default-card-title Lite
+                                    span.pricing-text-small Starting at
+                                    div.card-price
+                                        span.dollar $
+                                        span.price 0
+                                    span.pricing-text-small per month
+                                    p.card-text Basic error detection and alerting
+                                    a.btn-medium.card-btn(href='#') Free trial
+                                    div.card-link-container
+                                        a(href="") Calculate your price
+                                    .divider
 
-                            .row.align-items-center.pricing-content
-                                .col Automatic error capture for web, mobile, desktop, and server apps
+                                    ul.card-list
+                                        li
+                                            span Features
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span.bordered-bottom Unlimited monitored apps
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span Error Detection inbox and search
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span Automatic Error diagnostics
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span User interaction breadcrumbs
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span Jira issue synchronization
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span Email, Slack, and PagerDuty alerting
+                        .col-md-12.col-lg-4
+                            .card.text-center.default-card.card-standard
+                                .card-body.card-content
+                                    h5.card-title.default-card-title Standard
+                                    span.pricing-text-small Starting at
+                                    div.card-price
+                                        span.dollar $
+                                        span.price 59
+                                    span.pricing-text-small per month
+                                    p.card-text Stability monitoring for application health
+                                    a.btn.btn-primary.btn-lg(href='#') Free trial
+                                    a(href="") Calculate your price
+                                    .divider
+                                    h6 Lite features plus
+                                    ul.list
+                                        li Real-time application stability score
+                                        li Release stability dashboard
+                                        li A/B test & experiment stability metrics
+                                        li Key account experience segmentation
+                                        li Custom data segments & pivots
+                                        li Okta, OneLogin & SAML SSO
+                                        li Splunk and Amazon SQS support
 
-                            .row.align-items-center.pricing-content
-                                .col Sourcemaps, dSYMs, and ProGuard support
-                            .row.align-items-center.pricing-content
-                                .col Unlimited monitored apps
-                            .row.align-items-center.pricing-content
-                                .col Support for over 50 platforms and frameworks
-                            .row.align-items-center.pricing-content
-                                .col Advanced error search and filtering
-                            .row.align-items-center.pricing-content
-                                .col Interactive timeline analysis
-                            .row.align-items-center.pricing-content
-                                .col Custom diagnostic data
+                        .col-md-12.col-lg-4
+                            .card.text-center.default-card
+                                .card-body.card-content
+                                    h5.card-title.default-card-title Enterprise
+                                    span.pricing-text-small Starting at
+                                    div.card-price
+                                        span.price.contact-us Contact Us
+                                    span.pricing-text-small per month
+                                    p.card-text Custom plans for higher volumes and larger teams
+                                    a.btn.btn-primary.btn-lg(href='#') Free trial
+                                    a(href="") Calculate your price
+                                    .divider
+                                    h6 Standard features plus
+                                    ul.list
+                                        li Priority support
+                                        li Onboarding and training
+                                        li On-premise optional with scaling via HA clustering
+                                        li HIPAA/PCI/PHI compliance
+                                        li Custom data retention
+                                        li Burst protection & event scaling
+                                        li Custom license terms (MSA, SLA)
 
-                            // Alerts and workflow integrations
+        section(style="padding-top: 150px; padding-bottom: 150px")
+            .container
+                .row.d-flex.flex-column.align-items-center
+                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819ee6590e795_gold_accent_centered-f5f2049b.svg", style="width: 70px")
+                    h2 Trusted by over 5,000 of the world's best engineering teams
+
+                .row.justify-content-center
+                    .logo-company
+                        img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08196a3490e82f_airbnb-logo.png")
+                    .logo-company
+                        img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d2290e826_mailchimp-logo.png")
+                    .logo-company
+                        img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197a2d90e82e_oracle-logo.png")
+                    .logo-company
+                        img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819a3bc90e830_square-logo.png")
+                    .logo-company
+                        img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd081946bd90e824_lyft-logo.png")
+                    .logo-company
+                        img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819c1f290e827_pagerduty-logo.png")
+                .row
+                    .col.text-center
+                        a.btn.btn-primary.btn-lg(href='#') See how our customers use bugsnag
+
+        section.pricing-plans-section
+            .container
+
+                h2 Pricing plans
+
+                .row
+                    .col-6.d-flex-column
+                        // Error monitoring & diagnostic tools
+                        .sticky-block
                             .row.pricing-content
                             .row.pricing-content
                                 .col.d-flex.align-items-center
                                     img.pricing-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819e5b490e7d7_code-cc32753f.svg")
-                                    span Alerts and workflow integrations
+                                    span Error monitoring & diagnostic tools
 
-                            .row.align-items-center.pricing-content
-                                .col Team chat alerts (Slack and many more)
-                            .row.align-items-center.pricing-content
-                                .col Two-way issue tracker sync (JIRA, Pivotal, and more)
-                            .row.align-items-center.pricing-content
-                                .col Automatic spike detection
-                            .row.align-items-center.pricing-content
-                                .col On-call alerts (PagerDuty, OpsGenie, and more)
-                            .row.align-items-center.pricing-content
-                                .col Regression alerts
-                            .row.align-items-center.pricing-content
-                                .col Daily and weekly reports
+                        .row.align-items-center.pricing-content
+                            .col Automatic error capture for web, mobile, desktop, and server apps
 
-                            // Administration, security, and data access
+                        .row.align-items-center.pricing-content
+                            .col Sourcemaps, dSYMs, and ProGuard support
+                        .row.align-items-center.pricing-content
+                            .col Unlimited monitored apps
+                        .row.align-items-center.pricing-content
+                            .col Support for over 50 platforms and frameworks
+                        .row.align-items-center.pricing-content
+                            .col Advanced error search and filtering
+                        .row.align-items-center.pricing-content
+                            .col Interactive timeline analysis
+                        .row.align-items-center.pricing-content
+                            .col Custom diagnostic data
 
+                        // Alerts and workflow integrations
+                        .row.pricing-content
+                        .row.pricing-content
+                            .col.d-flex.align-items-center
+                                img.pricing-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819e5b490e7d7_code-cc32753f.svg")
+                                span Alerts and workflow integrations
+
+                        .row.align-items-center.pricing-content
+                            .col Team chat alerts (Slack and many more)
+                        .row.align-items-center.pricing-content
+                            .col Two-way issue tracker sync (JIRA, Pivotal, and more)
+                        .row.align-items-center.pricing-content
+                            .col Automatic spike detection
+                        .row.align-items-center.pricing-content
+                            .col On-call alerts (PagerDuty, OpsGenie, and more)
+                        .row.align-items-center.pricing-content
+                            .col Regression alerts
+                        .row.align-items-center.pricing-content
+                            .col Daily and weekly reports
+
+                        // Administration, security, and data access
+
+                        .row.pricing-content
+                        .row.pricing-content
+                            .col.d-flex.align-items-center
+                                img.pricing-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819e5b490e7d7_code-cc32753f.svg")
+                                span Administration, security, and data access
+
+                        .row.align-items-center.pricing-content
+                            .col Team chat alerts (Slack and many more)
+                        .row.align-items-center.pricing-content
+                            .col Two-way issue tracker sync (JIRA, Pivotal, and more)
+                        .row.align-items-center.pricing-content
+                            .col Automatic spike detection
+                        .row.align-items-center.pricing-content
+                            .col On-call alerts (PagerDuty, OpsGenie, and more)
+                        .row.align-items-center.pricing-content
+                            .col Regression alerts
+                        .row.align-items-center.pricing-content
+                            .col Daily and weekly reports
+
+
+                    .col-6
+                        // Error monitoring & diagnostic tools
+                        .sticky-block
                             .row.pricing-content
+                                .col.d-flex.flex-column.align-items-center.justify-content-center
+                                    span LITE
+                                .col.d-flex.flex-column.align-items-center.justify-content-center
+                                    span STANDARD
+                                .col.d-flex.flex-column.align-items-center.justify-content-center
+                                    span ENTERPRISE
                             .row.pricing-content
-                                .col.d-flex.align-items-center
-                                    img.pricing-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819e5b490e7d7_code-cc32753f.svg")
-                                    span Administration, security, and data access
+                                .col.d-flex.flex-column.align-items-center.justify-content-center
+                                    a.btn.btn-primary(href='#') Free trial
+                                .col.d-flex.flex-column.align-items-center.justify-content-center
+                                    a.btn.btn-primary(href='#') Free trial
+                                .col.d-flex.flex-column.align-items-center.justify-content-center
+                                    a.btn.btn-primary(href='#') Free trial
+                        .row.align-items-center.pricing-content
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                        .row.align-items-center.pricing-content
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                        .row.align-items-center.pricing-content
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                        .row.align-items-center.pricing-content
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                        .row.align-items-center.pricing-content
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                        .row.align-items-center.pricing-content
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                        .row.align-items-center.pricing-content
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
 
-                            .row.align-items-center.pricing-content
-                                .col Team chat alerts (Slack and many more)
-                            .row.align-items-center.pricing-content
-                                .col Two-way issue tracker sync (JIRA, Pivotal, and more)
-                            .row.align-items-center.pricing-content
-                                .col Automatic spike detection
-                            .row.align-items-center.pricing-content
-                                .col On-call alerts (PagerDuty, OpsGenie, and more)
-                            .row.align-items-center.pricing-content
-                                .col Regression alerts
-                            .row.align-items-center.pricing-content
-                                .col Daily and weekly reports
+                        // Alerts and workflow integrations
+                        .row.pricing-content
+                        .row.pricing-content
+                        .row.align-items-center.pricing-content
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                        .row.align-items-center.pricing-content
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                        .row.align-items-center.pricing-content
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                        .row.align-items-center.pricing-content
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                        .row.align-items-center.pricing-content
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
 
-
-                        .col-6
-                            // Error monitoring & diagnostic tools
-                            .sticky-block
-                                .row.pricing-content
-                                    .col.d-flex.flex-column.align-items-center.justify-content-center
-                                        span LITE
-                                    .col.d-flex.flex-column.align-items-center.justify-content-center
-                                        span STANDARD
-                                    .col.d-flex.flex-column.align-items-center.justify-content-center
-                                        span ENTERPRISE
-                                .row.pricing-content
-                                    .col.d-flex.flex-column.align-items-center.justify-content-center
-                                        a.btn.btn-primary(href='#') Free trial
-                                    .col.d-flex.flex-column.align-items-center.justify-content-center
-                                        a.btn.btn-primary(href='#') Free trial
-                                    .col.d-flex.flex-column.align-items-center.justify-content-center
-                                        a.btn.btn-primary(href='#') Free trial
-                            .row.align-items-center.pricing-content
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                            .row.align-items-center.pricing-content
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                            .row.align-items-center.pricing-content
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                            .row.align-items-center.pricing-content
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                            .row.align-items-center.pricing-content
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                            .row.align-items-center.pricing-content
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                            .row.align-items-center.pricing-content
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-
-                            // Alerts and workflow integrations
-                            .row.pricing-content
-                            .row.pricing-content
-                            .row.align-items-center.pricing-content
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                            .row.align-items-center.pricing-content
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                            .row.align-items-center.pricing-content
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                            .row.align-items-center.pricing-content
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                            .row.align-items-center.pricing-content
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-
-                            .row.align-items-center.pricing-content
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                .col.checkbox-img
-                                    img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                        .row.align-items-center.pricing-content
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                            .col.checkbox-img
+                                img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
 
 
 
@@ -363,33 +392,137 @@ html(lang="en")
 
 
 
-                    .row.pt-4.pb-5
-                        .col
-                            .divider
+                .row.pt-4.pb-5
+                    .col
+                        .divider
 
-                    .row.pb-5
-                        .col
-                            span *The free tier of the Lite plan includes 7 days of data retention
-            section.frequently-asked-questions(style="padding: 100px 0; border: 1px solid red")
-                .container
-                    h2 Frequently asked questions
-                    p
-                        a.btn.btn-primary(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
-                            | Link with href
-                        button.btn.btn-primary(type='button' data-toggle='collapse' data-target='#collapseExample' aria-expanded='false' aria-controls='collapseExample')
-                            | Button with data-target
-                    #collapseExample.collapse
-                        .card.card-body
-                            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                    h2 sklfchlsh
-                    //.row(style="border: 1px solid red")
-                    //    .col.d-flex.justify-content-between(data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample")
-                    //        span event
-                    //        img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
-                    //
-                    //    #collapseExample.collapse(style="border: 2px solid green")
-                    //        .card.card-body
-                    //            span Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                .row.pb-5
+                    .col
+                        span *The free tier of the Lite plan includes 7 days of data retention
+        section.faqsection(style="padding: 100px 0; border: 1px solid green")
+            .container
+                h2 Frequently asked questions
+                .row.pt-3.pb-3
+                    .col.d-flex.justify-content-between(data-toggle="collapse" href="#collapseBlock1" aria-expanded="false" aria-controls="collapseBlock1")
+                        a(href="#") What is a seat?
+                        img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
+                .row.pt-3.pb-3
+                    .col
+                        #collapseBlock1.collapse
+                            .card.card-body
+                                | A seat is shorthand for a collaborator — anyone who logs in to Bugsnag.
+                .row.pt-3.pb-3
+                    .col.d-flex.justify-content-between(data-toggle="collapse" href="#collapseBlock2" aria-expanded="false" aria-controls="collapseBlock2")
+                        a(href="#") How does the 14-day free trial work?
+                        img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
+                .row.pt-3.pb-3
+                    .col
+                        #collapseBlock2.collapse
+                            .card.card-body
+                                | Unrestricted access to all standard features free for 14 days. At the end of your trial, select a plan to continue using Bugsnag.
+                .row.pt-3.pb-3
+                    .col.d-flex.justify-content-between(data-toggle="collapse" href="#collapseBlock3" aria-expanded="false" aria-controls="collapseBlock3")
+                        a(href="#") What happens if I upgrade during my free trial?
+                        img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
+                .row.pt-3.pb-3
+                    .col
+                        #collapseBlock3.collapse
+                            .card.card-body
+                                | You can select a plan at any time during your 14-day free trial. We won't charge you until the end of your trial.
+                .row.pt-3.pb-3
+                    .col.d-flex.justify-content-between(data-toggle="collapse" href="#collapseBlock4" aria-expanded="false" aria-controls="collapseBlock4")
+                        a(href="#") What happens if I go over my event quota?
+                        img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
+                .row.pt-3.pb-3
+                    .col
+                        #collapseBlock4.collapse
+                            .card.card-body
+                                | We break your monthly event count into daily increments.
+                                | When you exceed your daily quota, we'll continue to save every event you send us at no additional cost.
+                                | If you exceed your daily event quota more than 3 times in any 30-day rolling period, we'll automatically upgrade you to the next plan to ensure coverage.
+                                | If you disable automatic upgrades, we'll sample your events to stay within your quota.
+                .row.pt-3.pb-3
+                    .col.d-flex.justify-content-between(data-toggle="collapse" href="#collapseBlock5" aria-expanded="false" aria-controls="collapseBlock5")
+                        a(href="#") What forms of payment do you accept?
+                        img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
+                .row.pt-3.pb-3
+                    .col
+                        #collapseBlock5.collapse
+                            .card.card-body
+                                | We accept all major credit and debit cards: Visa, Mastercard, American Express, JCB, Discover and Diners Club. Payments are powered by Stripe.
+        section.get-started-section(style="padding: 100px 0; border: 1px solid red")
+            .container
+                .row
+                    .col-6(style="border-right: 1px solid grey")
+                        img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819651c90e79a_Divider%20Shapes.svg")
+                        h2 Get started for free.
+                        p Try all features for 14 days · No credit card required.
+                        a.btn.btn-primary.btn-lg(href="") Get started
+                    .col-6(style="padding-left: 60px")
+                        img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819651c90e79a_Divider%20Shapes.svg")
+                        h2 Get started for free.
+                        p Try all features for 14 days · No credit card required.
+                        a.btn.btn-primary.btn-lg(href="") Get started
+        footer.footer
+            .container-fluid(style="padding-left: 0; padding-right: 0")
+                .row.no-gutters
+                    .col
+                        .divider
+                .row.no-gutters
+                    .col-2.d-flex.flex-column
+                        a(href="#")
+                            img.footer-logo(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c7fab2b4e3feefc6bd8f0ce_5c7e8ad810414d05694fe4d8_asset%203.svg")
+                    .col-2.d-flex.flex-column
+                        h5(href="#") Product
+                        a(href="#") Stability Management
+                        a(href="#") Integrations
+                        a(href="#") On-Premise
+                        a(href="#") Pricing
+                        a(href="#") Open Source
+                        a(href="") Mobile Solution
+                        a(href="") Web Solution
+                    .col-2.d-flex.flex-column
+                        h5 Resources
+                        a(href="#") Resource Library
+                        a(href="#") Blog
+                        a(href="#") Docs
+                        a(href="#") Status
+                        a(href="#") Contact
+                    .col-2.d-flex.flex-column
+                        h5 Company
+                        a(href="#") About
+                        a(href="#") Customers
+                        a(href="#") Customer Stories
+                        a(href="#") Jobs
+                        a(href="#") Security
+                    .col-2.d-flex.flex-column
+                        h5 Platforms
+                        a(href="#") JavaScript
+                        a(href="#") React
+                        a(href="#") React Native
+                        a(href="#") iOS
+                        a(href="#") Android + SDK
+                        a(href="#") Rails
+                        a(href="#") Laravel
+                        a(href="#") PHP
+                        a(href="#") Python
+                        a(href="#") More...
+                    .col-2.d-flex
+                        a.footer-social-icon(href="#")
+                            img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197cbe90e7a7_twitter-logo-silhouette.svg")
+                        a.footer-social-icon(href="#")
+                            img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819028c90e7a9_dribbble-logo.svg")
+                        a.footer-social-icon(href="#")
+                            img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819f3ed90e7a8_github-logo.svg")
+                .row.no-gutters
+                    .col
+                        span © 2019 Bugsnag Inc.
+                        div
+                            a(href="") Terms of Service
+                            span.dot-terms
+                            a(href="") Privacy Policy
+
+
 
         script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")

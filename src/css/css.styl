@@ -8,22 +8,187 @@ HTML
 BODY
   default-font-family()
   /*bg-linear-gr(light-grey-green-color, grey-green-color)*/
+  font-family 'Lineto brown pro',sans-serif
+  font-size 14px
 
-
-.card-content
+.btn-medium
   display flex
-  flex-direction column
-.list
-  text-align left
+  position relative
+  overflow hidden
+  min-width 160px
+  min-height 40px
+  padding-right 24px
+  padding-left 24px
+  -webkit-box-pack: center
+  -webkit-justify-content: center
+  -ms-flex-pack center
+  justify-content center
+  -webkit-box-align center
+  -webkit-align-items center
+  -ms-flex-align center
+  align-items center
+  border-radius: 4px
+  background #fff
+  border 1px solid #000d47
+  -webkit-transition: background-color .2s ease,color .2s ease
+  transition background-color .2s ease,color .2s ease
+  color: #fff
+  font-weight 700
+  text-decoration none
+
+.btn-dark-blue
+  background-color #4949e4
+  border none
+
+/*Header navigation */
+
+.header-nav
+  padding 10px 55px
+
+.navbar-expand-lg .navbar-nav .nav-link
+  padding-left 24px
+  padding-right 24px
+  @media(max-width: 768px)
+    padding-left 0
+    padding-right 0
+
+.link-dropdown::after
+  display none
+  @media(max-width 768px)
+    display: inline-block
+    margin-left .255em
+    vertical-align .255em
+    content: ""
+    border-top .3em solid
+    border-right .3em solid transparent
+    border-bottom 0
+    border-left .3em solid transparent
+
+/*Header navigation end*/
+
+.hero
+  background #000d47
+  color #fff
+  padding-top 200px
+  height 600px
+
+
+/*Cards*/
+
+.cards-container
+  position relative
+  margin-top -250px
+  .cards-menu-tabs
+    text-align center
+    padding-bottom 40px
+    a
+      margin-right 30px
+      color #fff
+      &:hover
+        text-decoration none
+  .link-decorated
+    border-bottom 2px solid #fff
+    padding-bottom 5px
+
+  .default-card
+    min-height 650px
+    border-radius: 5px
+    border: 1px solid transparent
+    background-color: #fff;
+    box-shadow: 0 2px 11px 0 rgba(0,0,0,.09)
+    text-align: center
+
+  .card-standard
+    position relative
+    min-height 680px
+    margin-right -5px
+    margin-left -5px
+    margin-top -20px
+    z-index 1
+    padding-top 20px
+
+  .card-content
+    display flex
+    flex-direction column
+    align-items center
+    .default-card-title
+      font-size 18px
+      font-weight 700
+      color #000d47
+      text-transform uppercase
+
+    .pricing-text-small
+      color #676671
+      font-size 13px
+      padding-top 5px
+      padding-bottom 5px
+
+    .card-price
+      display flex
+      justify-content center
+      align-items center
+      padding 5px 0
+      .dollar
+        margin-right: 2.5px
+        color: #000d47
+        font-size: 24px
+        line-height: 30px
+        font-weight: 400
+
+      .price
+        color #000d47
+        font-size 45px
+        line-height 40px
+        font-weight 700
+
+      .contact-us
+        font-size 32px
+
+    .card-btn
+      min-width 70%
+      color #000d47
+      font-size 15px
+      text-transform uppercase
+      text-decoration none
+      &:hover
+        background #000d47
+        color #fff
+
+    .card-link-container
+      padding-top 20px
+      padding-bottom 10px
+      line-height: 24px
+      a
+        color: #4949e4
+        font-size 16px
+        font-weight 700
+        text-decoration none
+    .card-list
+      text-align left
+      padding-left 0
+      width 100%
+      list-style none
+      li
+        margin-top 10px
+        span:not(:first-child)
+          border-bottom: 1px dashed #b8b7bd
+      .card-list-icon-check
+        width 15px
+        margin-right 8px
+
+/*Cards end*/
+
+
 .divider
   height 0
+  width 100%
   margin .5rem 0
   overflow hidden
   border-top 1px solid #e9ecef
 
 .sticky-block
   position sticky
-  top 64px
+  top 60px
   background #fff
   z-index 1
 
@@ -43,7 +208,7 @@ BODY
   img
     width 20px
 
-.pricing-plans
+.pricing-plans-section
 
   .pricing-content
     min-height 50px
@@ -51,3 +216,33 @@ BODY
   .pricing-icon
     width 27px
     margin-right 15px
+
+.arrow-icon
+  transform translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg)
+  transform-style preserve-3d
+  height 17px
+  width 32px
+
+.footer
+  padding 50px 55px
+  background #000d47
+  color #fff
+
+  .footer-logo
+    width 40px
+
+  .footer-social-icon
+    width 25px
+    opacity .6
+    -webkit-transition-property opacity
+    transition-property opacity
+
+
+.dot-terms
+  width 2px
+  height 2px
+  margin-top 2px
+  margin-right 10px
+  margin-left 10px
+  background-color #4949e4
+  display inline-block
