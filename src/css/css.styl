@@ -8,8 +8,13 @@ HTML
 BODY
   default-font-family()
   /*bg-linear-gr(light-grey-green-color, grey-green-color)*/
-  font-family 'Lineto brown pro',sans-serif
-  font-size 14px
+  background #fff
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  min-height: 100%;
+  /*background-color: #fff;*/
+  color: #333;
 
 .btn-medium
   display flex
@@ -35,15 +40,21 @@ BODY
   color: #fff
   font-weight 700
   text-decoration none
+  text-transform uppercase
 
 .btn-dark-blue
   background-color #4949e4
   border none
+  &:hover
+    color #ced8fe
 
 /*Header navigation */
 
 .header-nav
   padding 10px 55px
+  border-style none none solid
+  border-width 1px 1px .5px
+  border-color #b8b7bd #b8b7bd rgba(184,183,189,.5)
 
 .navbar-expand-lg .navbar-nav .nav-link
   padding-left 24px
@@ -51,39 +62,70 @@ BODY
   @media(max-width: 768px)
     padding-left 0
     padding-right 0
+  &.link-without-dropdown
+    &:hover
+      color #4442cb
+    &:focus
+      color #4442cb
 
-.link-dropdown::after
-  display none
-  @media(max-width 768px)
-    display: inline-block
-    margin-left .255em
-    vertical-align .255em
-    content: ""
-    border-top .3em solid
-    border-right .3em solid transparent
-    border-bottom 0
-    border-left .3em solid transparent
+.header-nav-link
+  color: rgb(103, 102, 113)
+  font-size 15px
+  line-height 18px
+  &::after
+    display none
+    @media(max-width 768px)
+      display: inline-block
+      margin-left .255em
+      vertical-align .255em
+      content: ""
+      border-top .3em solid
+      border-right .3em solid transparent
+      border-bottom 0
+      border-left .3em solid transparent
 
+.dropdown-item-title
+  font-size 13px
+  line-height 20px
+  color rgb(142, 142, 150)
+  text-transform uppercase
 /*Header navigation end*/
 
 .hero
   background #000d47
   color #fff
-  padding-top 200px
-  height 600px
+  display block
+  padding-top 180px
+  height 650px
 
+.hero-title
+  font-size 42px
+  line-height 52px
+  font-weight 300
+
+.hero-subtitle
+  color rgb(255, 255, 255)
+  font-size 16px
+  font-weight 400
+  line-height 27px
+  margin-bottom 16px
+  margin-top 8px
+  opacity 0.55
 
 /*Cards*/
 
 .cards-container
+  display block
   position relative
-  margin-top -250px
+  margin-top -300px
   .cards-menu-tabs
     text-align center
-    padding-bottom 40px
+    padding-bottom 60px
     a
       margin-right 30px
       color #fff
+      font-size 16px
+      line-height 19px
       &:hover
         text-decoration none
   .link-decorated
@@ -94,7 +136,7 @@ BODY
     min-height 650px
     border-radius: 5px
     border: 1px solid transparent
-    background-color: #fff;
+    background-color: #fff
     box-shadow: 0 2px 11px 0 rgba(0,0,0,.09)
     text-align: center
 
@@ -116,10 +158,15 @@ BODY
       font-weight 700
       color #000d47
       text-transform uppercase
+    .default-card-text
+      margin-top 10px
+      margin-bottom 20px
+      color #000d47
 
     .pricing-text-small
       color #676671
       font-size 13px
+      line-height 20px
       padding-top 5px
       padding-bottom 5px
 
@@ -127,7 +174,7 @@ BODY
       display flex
       justify-content center
       align-items center
-      padding 5px 0
+
       .dollar
         margin-right: 2.5px
         color: #000d47
@@ -157,9 +204,9 @@ BODY
     .card-link-container
       padding-top 20px
       padding-bottom 10px
-      line-height: 24px
       a
         color: #4949e4
+        line-height: 24px
         font-size 16px
         font-weight 700
         text-decoration none

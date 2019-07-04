@@ -15,64 +15,60 @@ html(lang="en")
                     ul.navbar-nav.ml-auto
 
                         li.nav-item.dropdown
-                            a#navbarDropdown1.nav-link.dropdown-toggle.link-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            a#navbarDropdown1.nav-link.dropdown-toggle.header-nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
                                 | Product
                             .dropdown-menu(aria-labelledby='navbarDropdown1')
                                 .content-dropdown-menu.d-flex
                                     .left-col-content
-                                        a.dropdown-item(href='#') Stability Management
-                                        a.dropdown-item(href='#') Stability Score
-                                        a.dropdown-item(href='#') Search and Segment
-                                        a.dropdown-item(href='#') On-Premise
+                                        a.dropdown-item.header-nav-link(href='#') Stability Management
+                                        a.dropdown-item.header-nav-link(href='#') Stability Score
+                                        a.dropdown-item.header-nav-link(href='#') Search and Segment
+                                        a.dropdown-item.header-nav-link(href='#') On-Premise
                                     .right-col-content
-                                        a.dropdown-item(href='#') Platforms
-                                        a.dropdown-item(href='#') Integrations
-                                        a.dropdown-item(href='#') Security
-                                        a.dropdown-item(href='#') Why Bugsnag?
+                                        a.dropdown-item.header-nav-link(href='#') Platforms
+                                        a.dropdown-item.header-nav-link(href='#') Integrations
+                                        a.dropdown-item.header-nav-link(href='#') Security
+                                        a.dropdown-item.header-nav-link(href='#') Why Bugsnag?
 
                         li.nav-item.dropdown
-                            a#navbarDropdown2.nav-link.dropdown-toggle.link-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            a#navbarDropdown2.nav-link.dropdown-toggle.header-nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
                                 | Solutions
                             .dropdown-menu(aria-labelledby='navbarDropdown2')
                                 .content-dropdown-menu.d-flex
                                     .left-col-content
-                                        span BY ROLE:
-                                        a.dropdown-item(href='#') Software Engineer
-                                        a.dropdown-item(href='#') Engineering Manager
+                                        span.dropdown-item.dropdown-item-title By role:
+                                        a.dropdown-item.header-nav-link(href='#') Software Engineer
+                                        a.dropdown-item.header-nav-link(href='#') Engineering Manager
+                                        a.dropdown-item.header-nav-link(href='#') Release Manager
                                     .right-col-content
-                                        a.dropdown-item(href='#') Web
-                                        a.dropdown-item(href='#') Mobile
+                                        span.dropdown-item.dropdown-item-title By application:
+                                        a.dropdown-item.header-nav-link(href='#') Web
+                                        a.dropdown-item.header-nav-link(href='#') Mobile
 
                         li.nav-item.dropdown
-                            a#navbarDropdown3.nav-link.dropdown-toggle.link-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            a#navbarDropdown3.nav-link.dropdown-toggle.header-nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
                                 | Customers
                             .dropdown-menu(aria-labelledby='navbarDropdown3')
                                 .content-dropdown-menu.d-flex
                                     .left-col-content
-                                        a.dropdown-item(href='#') Customers
-                                        a.dropdown-item(href='#') Customer Stories
-                                    .right-col-content
-                                        a.dropdown-item(href='#') Action
-                                        a.dropdown-item(href='#') Another action
+                                        a.dropdown-item.header-nav-link(href='#') Customers
+                                        a.dropdown-item.header-nav-link(href='#') Customer Stories
 
                         li.nav-item
-                            a.nav-link(href='#') Pricing
+                            a.nav-link.header-nav-link.link-without-dropdown(href='#') Pricing
                         li.nav-item.dropdown
-                            a#navbarDropdown4.nav-link.dropdown-toggle.link-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            a#navbarDropdown4.nav-link.dropdown-toggle.header-nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
                                 | Resources
                             .dropdown-menu(aria-labelledby='navbarDropdown4')
                                 .content-dropdown-menu.d-flex
                                     .left-col-content
-                                        a.dropdown-item(href='#') Action
-                                        a.dropdown-item(href='#') Another action
-                                    .right-col-content
-                                        a.dropdown-item(href='#') Action
-                                        a.dropdown-item(href='#') Another action
+                                        a.dropdown-item.header-nav-link(href='#') Resource Library
+                                        a.dropdown-item.header-nav-link(href='#') Blog
 
                         li.nav-item
-                            a.nav-link.link-dropdown(href='#') Docs
+                            a.nav-link.header-nav-link.link-without-dropdown(href='#') Docs
                         li.nav-item
-                            a.nav-link.link-dropdown(href='#') Sign in
+                            a.nav-link.header-nav-link.link-without-dropdown(href='#') Sign in
 
 
                     a.nav-link.btn-medium.btn-dark-blue(href='#' tabindex='-1' aria-disabled='true') Get started
@@ -80,8 +76,8 @@ html(lang="en")
 
             .hero
                 .container
-                    h1.text-center Stability monitoring for all your apps
-                    p.text-center 3 minute installation · Try all features for 14 days · No credit card required
+                    h1.text-center.hero-title Stability monitoring for all your apps
+                    p.text-center.hero-subtitle 3 minute installation · Try all features for 14 days · No credit card required
 
             .cards-container
                 .container
@@ -100,7 +96,9 @@ html(lang="en")
                                         span.dollar $
                                         span.price 0
                                     span.pricing-text-small per month
-                                    p.card-text Basic error detection and alerting
+                                    p.card-text.default-card-text Basic error detection
+                                        br
+                                        |and alerting
                                     a.btn-medium.card-btn(href='#') Free trial
                                     div.card-link-container
                                         a(href="") Calculate your price
@@ -108,7 +106,7 @@ html(lang="en")
 
                                     ul.card-list
                                         li
-                                            span Features
+                                            strong Features
                                         li
                                             img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
                                             span.bordered-bottom Unlimited monitored apps
@@ -136,7 +134,7 @@ html(lang="en")
                                         span.dollar $
                                         span.price 59
                                     span.pricing-text-small per month
-                                    p.card-text Stability monitoring for application health
+                                    p.card-text.default-card-text Stability monitoring for application health
                                     a.btn.btn-primary.btn-lg(href='#') Free trial
                                     a(href="") Calculate your price
                                     .divider
@@ -158,7 +156,7 @@ html(lang="en")
                                     div.card-price
                                         span.price.contact-us Contact Us
                                     span.pricing-text-small per month
-                                    p.card-text Custom plans for higher volumes and larger teams
+                                    p.card-text.default-card-text Custom plans for higher volumes and larger teams
                                     a.btn.btn-primary.btn-lg(href='#') Free trial
                                     a(href="") Calculate your price
                                     .divider
