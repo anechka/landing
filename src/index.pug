@@ -13,11 +13,10 @@ html(lang="en")
                     span.navbar-toggler-icon
                 #navbarCollapse.collapse.navbar-collapse
                     ul.navbar-nav.ml-auto
-
                         li.nav-item.dropdown
                             a#navbarDropdown1.nav-link.dropdown-toggle.header-nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
                                 | Product
-                            .dropdown-menu(aria-labelledby='navbarDropdown1')
+                            .dropdown-menu.header-dropdown(aria-labelledby='navbarDropdown1')
                                 .content-dropdown-menu.d-flex
                                     .left-col-content
                                         a.dropdown-item.header-nav-link(href='#') Stability Management
@@ -71,7 +70,7 @@ html(lang="en")
                             a.nav-link.header-nav-link.link-without-dropdown(href='#') Sign in
 
 
-                    a.nav-link.btn-medium.btn-dark-blue(href='#' tabindex='-1' aria-disabled='true') Get started
+                    a.nav-link.btn-medium(href='#' tabindex='-1' aria-disabled='true') Get started
 
 
             .hero
@@ -99,7 +98,7 @@ html(lang="en")
                                     p.card-text.default-card-text Basic error detection
                                         br
                                         |and alerting
-                                    a.btn-medium.card-btn(href='#') Free trial
+                                    a.btn-medium.card-btn.btn-dark-blue(href='#') Free trial
                                     div.card-link-container
                                         a(href="") Calculate your price
                                     .divider
@@ -109,22 +108,22 @@ html(lang="en")
                                             strong Features
                                         li
                                             img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                            span.bordered-bottom Unlimited monitored apps
+                                            span(data-toggle="tooltip" data-placement="right" title="Monitor all of your backend, mobile, or browser applications in one place.") Unlimited monitored apps
                                         li
                                             img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                            span Error Detection inbox and search
+                                            span(data-toggle="tooltip" data-placement="right" title="Prioritize the worst errors with powerful search and sorting.") Error Detection inbox and search
                                         li
                                             img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                            span Automatic Error diagnostics
+                                            span(data-toggle="tooltip" data-placement="right" title="Reproduce and fix errors quickly with automatically captured diagnostic data.") Automatic Error diagnostics
                                         li
                                             img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                            span User interaction breadcrumbs
+                                            span(data-toggle="tooltip" data-placement="right" title="See all user interactions which happened leading up to a crash.") User interaction breadcrumbs
                                         li
                                             img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                            span Jira issue synchronization
+                                            span(data-toggle="tooltip" data-placement="right" title="Two-way issue tracking synchronization with every major issue tracking and project management tool.") Jira issue synchronization
                                         li
                                             img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
-                                            span Email, Slack, and PagerDuty alerting
+                                            span(data-toggle="tooltip" data-placement="right" title="Get alerted to new errors and spikes in error rates right in the tools your team already uses.") Email, Slack, and PagerDuty alerting
                         .col-md-12.col-lg-4
                             .card.text-center.default-card.card-standard
                                 .card-body.card-content
@@ -134,19 +133,37 @@ html(lang="en")
                                         span.dollar $
                                         span.price 59
                                     span.pricing-text-small per month
-                                    p.card-text.default-card-text Stability monitoring for application health
-                                    a.btn.btn-primary.btn-lg(href='#') Free trial
-                                    a(href="") Calculate your price
+                                    p.card-text.default-card-text Stability monitoring
+                                        br
+                                        |for application health
+                                    a.btn-medium.card-btn(href='#') Free trial
+                                    div.card-link-container
+                                        a(href="") Calculate your price
                                     .divider
-                                    h6 Lite features plus
-                                    ul.list
-                                        li Real-time application stability score
-                                        li Release stability dashboard
-                                        li A/B test & experiment stability metrics
-                                        li Key account experience segmentation
-                                        li Custom data segments & pivots
-                                        li Okta, OneLogin & SAML SSO
-                                        li Splunk and Amazon SQS support
+                                    ul.card-list
+                                        li
+                                            strong Lite features plus
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span(data-toggle="tooltip" data-placement="right" title="Real-time stability score helps determine whether to build features or fix bugs.") Real-time application stability score
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span(data-toggle="tooltip" data-placement="right" title='"Spot bad releases, track release health over time, and see errors introduced in each release."') Release stability dashboard
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span(data-toggle="tooltip" data-placement="right" title="Tag your A/B your tests and experiments, amd segment them in Bugsnag to determine when stable enough to promote.") A/B test & experiment stability metrics
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span(data-toggle="tooltip" data-placement="right" title="Attach customer meta-data such as revenue, SLA, and subscription tier, and monitor their app experience with Bugsnag.") Key account experience segmentation
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span(data-toggle="tooltip" data-placement="right" title="Segment and pivot errors based on any other attributes available at runtime.") Custom data segments & pivots
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span(data-toggle="tooltip" data-placement="right" title="One-click sign-in and automatic provisioning for Okta, OneLogin, and more.") Okta, OneLogin & SAML SSO
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span(data-toggle="tooltip" data-placement="right" title="Data forwarding integration with Splunk Cloud and on-prem and Amazon SQS.") Splunk and Amazon SQS support
 
                         .col-md-12.col-lg-4
                             .card.text-center.default-card
@@ -156,27 +173,47 @@ html(lang="en")
                                     div.card-price
                                         span.price.contact-us Contact Us
                                     span.pricing-text-small per month
-                                    p.card-text.default-card-text Custom plans for higher volumes and larger teams
-                                    a.btn.btn-primary.btn-lg(href='#') Free trial
-                                    a(href="") Calculate your price
+                                    p.card-text.default-card-text Custom plans for higher volumes
+                                        br
+                                        |and larger teams
+                                    a.btn-medium.card-btn.btn-dark-blue(href='#') Free trial
+                                    div.card-link-container
+                                        a.hide(href="") Calculate your price
                                     .divider
-                                    h6 Standard features plus
-                                    ul.list
-                                        li Priority support
-                                        li Onboarding and training
-                                        li On-premise optional with scaling via HA clustering
-                                        li HIPAA/PCI/PHI compliance
-                                        li Custom data retention
-                                        li Burst protection & event scaling
-                                        li Custom license terms (MSA, SLA)
+                                    ul.card-list
+                                        li
+                                            strong Standard features plus
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span(data-toggle="tooltip" data-placement="right" title="Fast and unlimited support from our team of talented support engineers.") Priority support
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span(data-toggle="tooltip" data-placement="right" title="We'll make sure you get up and running and stay current with best practices.") Onboarding and training
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span(data-toggle="tooltip" data-placement="right" title="On-premise version of Bugsnag with regular updates and feature improvements and optional scalable HA clustering.") On-premise optional with scaling via HA clustering
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span(data-toggle="tooltip" data-placement="right" title="Stay compliant with your required certifications.") HIPAA/PCI/PHI compliance
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span(data-toggle="tooltip" data-placement="right" title="Need more than 60 days of event data? We've got you covered.") Custom data retention
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span(data-toggle="tooltip" data-placement="right" title="Custom plans which help protect against unexpected or seasonal spikes in errors.") Burst protection & event scaling
+                                        li
+                                            img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
+                                            span(data-toggle="tooltip" data-placement="right" title="Establish a master service agreement between Bugsnag and your organization.") Custom license terms (MSA, SLA)
 
-        section(style="padding-top: 150px; padding-bottom: 150px")
+        section.section-company-logos(style="")
             .container
                 .row.d-flex.flex-column.align-items-center
                     img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819ee6590e795_gold_accent_centered-f5f2049b.svg", style="width: 70px")
-                    h2 Trusted by over 5,000 of the world's best engineering teams
+                    h2.section-subtitle.text-center Trusted by over 5,000 of the world's best
+                        br
+                        |engineering teams
 
-                .row.justify-content-center
+                .row.logo-company-container
                     .logo-company
                         img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08196a3490e82f_airbnb-logo.png")
                     .logo-company
@@ -190,13 +227,13 @@ html(lang="en")
                     .logo-company
                         img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819c1f290e827_pagerduty-logo.png")
                 .row
-                    .col.text-center
-                        a.btn.btn-primary.btn-lg(href='#') See how our customers use bugsnag
+                    .col.d-flex.justify-content-center
+                        a.btn-medium.btn-dark-blue(href='#') See how our customers use bugsnag
 
         section.pricing-plans-section
             .container
 
-                h2 Pricing plans
+                h2.section-subtitle.text-center Pricing plans
 
                 .row
                     .col-6.d-flex-column
@@ -381,15 +418,6 @@ html(lang="en")
                                 img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
 
 
-
-
-
-
-
-
-
-
-
                 .row.pt-4.pb-5
                     .col
                         .divider
@@ -399,7 +427,7 @@ html(lang="en")
                         span *The free tier of the Lite plan includes 7 days of data retention
         section.faqsection(style="padding: 100px 0; border: 1px solid green")
             .container
-                h2 Frequently asked questions
+                h2.section-subtitle Frequently asked questions
                 .row.pt-3.pb-3
                     .col.d-flex.justify-content-between(data-toggle="collapse" href="#collapseBlock1" aria-expanded="false" aria-controls="collapseBlock1")
                         a(href="#") What is a seat?
@@ -526,3 +554,8 @@ html(lang="en")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
         script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
         script(src="js/index.js")
+
+        script.
+            $(function() {
+                $('[data-toggle="tooltip"]').tooltip()
+            });

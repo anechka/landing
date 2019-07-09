@@ -9,44 +9,92 @@ BODY
   default-font-family()
   /*bg-linear-gr(light-grey-green-color, grey-green-color)*/
   background #fff
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0;
-  min-height: 100%;
+  font-size 14px
+  line-height 20px
+  margin 0
+  min-height 100%
   /*background-color: #fff;*/
-  color: #333;
+  color #333
+
+.bs-tooltip-right
+  margin-left 10px
+
+.tooltip.show
+  opacity: 1;
+
+.tooltip-inner
+  max-width 200px
+  padding 10px
+  background-color #d5d5d5
+  color #595959
+  font-size 11.5px
+  text-align left
+
+.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before, .tooltip.bs-tooltip-right .arrow::before
+  border-right-color #d5d5d5
+
+.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before, .tooltip.bs-tooltip-left .arrow::before
+  border-left-color #d5d5d5
+
+
+.hide
+  opacity 0
+
+.section-subtitle
+  margin-bottom 24px
+  margin-top 20px
+  font-size 30px
+  line-height 40px
+  font-weight 700
+
+.divider
+  height 0
+  width 100%
+  margin .5rem 0
+  overflow hidden
+  border-top 1px solid #e9ecef
+
+.sticky-block
+  position sticky
+  top 60px
+  background #fff
+  z-index 1
 
 .btn-medium
   display flex
   position relative
   overflow hidden
   min-width 160px
-  min-height 40px
   padding-right 24px
   padding-left 24px
-  -webkit-box-pack: center
+  padding-top 0
+  padding-bottom 0
   -webkit-justify-content: center
-  -ms-flex-pack center
   justify-content center
-  -webkit-box-align center
   -webkit-align-items center
   -ms-flex-align center
   align-items center
   border-radius: 4px
-  background #fff
-  border 1px solid #000d47
-  -webkit-transition: background-color .2s ease,color .2s ease
-  transition background-color .2s ease,color .2s ease
   color: #fff
+  font-size 14px
+  line-height 43px
   font-weight 700
-  text-decoration none
   text-transform uppercase
-
-.btn-dark-blue
   background-color #4949e4
   border none
+  text-decoration none
   &:hover
     color #ced8fe
+    text-decoration none
+
+
+.btn-dark-blue
+  background-color #fff
+  color #000d47
+  border 1px solid rgb(0, 13, 71)
+  &:hover
+    background #000d47
+    color #fff
 
 /*Header navigation */
 
@@ -57,8 +105,7 @@ BODY
   border-color #b8b7bd #b8b7bd rgba(184,183,189,.5)
 
 .navbar-expand-lg .navbar-nav .nav-link
-  padding-left 24px
-  padding-right 24px
+  padding 10px 14px
   @media(max-width: 768px)
     padding-left 0
     padding-right 0
@@ -68,10 +115,26 @@ BODY
     &:focus
       color #4442cb
 
+.header-dropdown
+  min-width 25rem
+  margin-right -10px
+  margin-left -10px
+  border none
+  border-radius 0
+  box-shadow 0 5px 14px -5px rgba(0,0,0, .26)
+  .left-col-content
+    a:nth-child(2)
+      padding-left 38px
+    a:nth-child(3)
+      padding-left 38px
+
 .header-nav-link
   color: rgb(103, 102, 113)
   font-size 15px
   line-height 18px
+  padding 10px 24px
+
+
   &::after
     display none
     @media(max-width 768px)
@@ -109,7 +172,7 @@ BODY
   font-weight 400
   line-height 27px
   margin-bottom 16px
-  margin-top 8px
+  margin-top 10px
   opacity 0.55
 
 /*Cards*/
@@ -156,6 +219,8 @@ BODY
     .default-card-title
       font-size 18px
       font-weight 700
+      margin-top 10px
+      margin-bottom 10px
       color #000d47
       text-transform uppercase
     .default-card-text
@@ -174,6 +239,7 @@ BODY
       display flex
       justify-content center
       align-items center
+      margin-top 5px
 
       .dollar
         margin-right: 2.5px
@@ -193,22 +259,15 @@ BODY
 
     .card-btn
       min-width 70%
-      color #000d47
-      font-size 15px
-      text-transform uppercase
-      text-decoration none
-      &:hover
-        background #000d47
-        color #fff
 
     .card-link-container
       padding-top 20px
       padding-bottom 10px
+      line-height: 24px
+      font-size 16px
+      font-weight 700
       a
         color: #4949e4
-        line-height: 24px
-        font-size 16px
-        font-weight 700
         text-decoration none
     .card-list
       text-align left
@@ -216,34 +275,36 @@ BODY
       width 100%
       list-style none
       li
+        display flex
+        align-items center
         margin-top 10px
         span:not(:first-child)
           border-bottom: 1px dashed #b8b7bd
+        span
+          cursor help
       .card-list-icon-check
         width 15px
         margin-right 8px
 
 /*Cards end*/
 
+/* Section Company logos */
+.section-company-logos
+  padding-top 150px
+  padding-bottom 130px
 
-.divider
-  height 0
-  width 100%
-  margin .5rem 0
-  overflow hidden
-  border-top 1px solid #e9ecef
+  .logo-company-container
+    margin-top 20px
+    margin-bottom 80px
+    align-items center
+    justify-content center
 
-.sticky-block
-  position sticky
-  top 60px
-  background #fff
-  z-index 1
-
-.logo-company
-  max-width 120px
-  margin-right 30px
-  margin-left 30px
-  opacity 1
+  .logo-company
+    max-width 120px
+    margin-right 30px
+    margin-left 30px
+    opacity 1
+/*Section Company logos end */
 
 .plan-name
   flex-basis 0
