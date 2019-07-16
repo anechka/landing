@@ -70,7 +70,7 @@ html(lang="en")
                             a.nav-link.header-nav-link.link-without-dropdown(href='#') Sign in
 
 
-                    a.nav-link.btn-medium(href='#' tabindex='-1' aria-disabled='true') Get started
+                    a.nav-link.button-default(href='#' tabindex='-1' aria-disabled='true') Get started
 
 
             .hero
@@ -79,7 +79,7 @@ html(lang="en")
                     p.text-center.hero-subtitle 3 minute installation · Try all features for 14 days · No credit card required
 
             .cards-container
-                .container-fluid(style="padding-left: 30px; padding-right: 30px")
+                .container-fluid.pl-0.pr-0
                     .row
                         .col-12
                             .cards-menu-tabs
@@ -98,7 +98,7 @@ html(lang="en")
                                     p.card-text.default-card-text Basic error detection
                                         br
                                         |and alerting
-                                    a.btn-medium.card-btn.btn-dark-blue(href='#') Free trial
+                                    a.button-default.card-btn.btn-dark-blue(href='#') Free trial
                                     div.card-link-container
                                         a(href="") Calculate your price
                                     .divider
@@ -136,7 +136,7 @@ html(lang="en")
                                     p.card-text.default-card-text Stability monitoring
                                         br
                                         |for application health
-                                    a.btn-medium.card-btn(href='#') Free trial
+                                    a.button-default.card-btn(href='#') Free trial
                                     div.card-link-container
                                         a(href="") Calculate your price
                                     .divider
@@ -176,7 +176,7 @@ html(lang="en")
                                     p.card-text.default-card-text Custom plans for higher volumes
                                         br
                                         |and larger teams
-                                    a.btn-medium.card-btn.btn-dark-blue(href='#') Free trial
+                                    a.button-default.card-btn.btn-dark-blue(href='#') Free trial
                                     div.card-link-container
                                         a.hide(href="") Calculate your price
                                     .divider
@@ -228,7 +228,7 @@ html(lang="en")
                         img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819c1f290e827_pagerduty-logo.png")
                 .row
                     .col.d-flex.justify-content-center
-                        a.btn-medium.btn-dark-blue(href='#') See how our customers use bugsnag
+                        a.button-default.btn-lg.btn-dark-blue(href='#') See how our customers use bugsnag
 
         section.pricing-plans-section
             .container
@@ -518,70 +518,154 @@ html(lang="en")
         section.faqsection
             .container
                 h2.section-subtitle Frequently asked questions
-                .row.pt-3.pb-3.justify-content-center
+                .row.justify-content-center
                     .col-10.d-flex.justify-content-between.pl-0.pr-0(data-toggle="collapse" href="#collapseBlock1" aria-expanded="false" aria-controls="collapseBlock1")
-                        a(href="#") What is a seat?
+                        a.faq-link-subtitle(href="#") What is a seat?
                         img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
-                .row.pt-3.pb-3.justify-content-center
+                .row.justify-content-center
                     .col-10.pl-0.pr-0
                         #collapseBlock1.collapse
-                            .card.card-body
+                            .card.card-body.card-collapse-body
                                 | A seat is shorthand for a collaborator — anyone who logs in to Bugsnag.
 
-                .row.pt-3.pb-3.justify-content-center
+                .row.pt-2.pb-2.justify-content-center
+                    .col-10.pl-0.pr-0
+                        .divider
+
+                .row.justify-content-center
                     .col-10.d-flex.justify-content-between.pl-0.pr-0(data-toggle="collapse" href="#collapseBlock2" aria-expanded="false" aria-controls="collapseBlock2")
-                        a(href="#") How does the 14-day free trial work?
+                        a.faq-link-subtitle(href="#") How does the 14-day free trial work?
                         img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
-                .row.pt-3.pb-3.justify-content-center
+                .row.justify-content-center
                     .col-10.pl-0.pr-0
                         #collapseBlock2.collapse
-                            .card.card-body
+                            .card.card-body.card-collapse-body
                                 | Unrestricted access to all standard features free for 14 days. At the end of your trial, select a plan to continue using Bugsnag.
-                .row.pt-3.pb-3
-                    .col.d-flex.justify-content-between(data-toggle="collapse" href="#collapseBlock3" aria-expanded="false" aria-controls="collapseBlock3")
-                        a(href="#") What happens if I upgrade during my free trial?
+                .row.pt-2.pb-2.justify-content-center
+                    .col-10.pl-0.pr-0
+                        .divider
+
+                .row.justify-content-center
+                    .col-10.d-flex.justify-content-between.pl-0.pr-0(data-toggle="collapse" href="#collapseBlock3" aria-expanded="false" aria-controls="collapseBlock3")
+                        a.faq-link-subtitle(href="#") What happens if I upgrade during my free trial?
                         img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
-                .row.pt-3.pb-3
-                    .col
+                .row.justify-content-center
+                    .col-10.pl-0.pr-0
                         #collapseBlock3.collapse
-                            .card.card-body
+                            .card.card-body.card-collapse-body
                                 | You can select a plan at any time during your 14-day free trial. We won't charge you until the end of your trial.
-                .row.pt-3.pb-3
-                    .col.d-flex.justify-content-between(data-toggle="collapse" href="#collapseBlock4" aria-expanded="false" aria-controls="collapseBlock4")
-                        a(href="#") What happens if I go over my event quota?
+                .row.pt-2.pb-2.justify-content-center
+                    .col-10.pl-0.pr-0
+                        .divider
+
+                .row.justify-content-center
+                    .col-10.d-flex.justify-content-between.pl-0.pr-0(data-toggle="collapse" href="#collapseBlock4" aria-expanded="false" aria-controls="collapseBlock4")
+                        a.faq-link-subtitle(href="#") What happens if I go over my event quota?
                         img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
-                .row.pt-3.pb-3
-                    .col
+                .row.justify-content-center
+                    .col-10.pl-0.pr-0
                         #collapseBlock4.collapse
-                            .card.card-body
+                            .card.card-body.card-collapse-body
                                 | We break your monthly event count into daily increments.
                                 | When you exceed your daily quota, we'll continue to save every event you send us at no additional cost.
                                 | If you exceed your daily event quota more than 3 times in any 30-day rolling period, we'll automatically upgrade you to the next plan to ensure coverage.
                                 | If you disable automatic upgrades, we'll sample your events to stay within your quota.
-                .row.pt-3.pb-3
-                    .col.d-flex.justify-content-between(data-toggle="collapse" href="#collapseBlock5" aria-expanded="false" aria-controls="collapseBlock5")
-                        a(href="#") What forms of payment do you accept?
+                .row.pt-2.pb-2.justify-content-center
+                    .col-10.pl-0.pr-0
+                        .divider
+
+                .row.justify-content-center
+                    .col-10.d-flex.justify-content-between.pl-0.pr-0(data-toggle="collapse" href="#collapseBlock5" aria-expanded="false" aria-controls="collapseBlock5")
+                        a.faq-link-subtitle(href="#") What forms of payment do you accept?
                         img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
-                .row.pt-3.pb-3
-                    .col
+                .row.justify-content-center
+                    .col-10.pl-0.pr-0
                         #collapseBlock5.collapse
-                            .card.card-body
+                            .card.card-body.card-collapse-body
                                 | We accept all major credit and debit cards: Visa, Mastercard, American Express, JCB, Discover and Diners Club. Payments are powered by Stripe.
-        section.get-started-section(style="padding: 100px 0; border: 1px solid red")
-            .container
-                .row
-                    .col-6(style="border-right: 1px solid grey")
+                .row.pt-2.pb-2.justify-content-center
+                    .col-10.pl-0.pr-0
+                        .divider
+
+                .row.justify-content-center
+                    .col-10.d-flex.justify-content-between.pl-0.pr-0(data-toggle="collapse" href="#collapseBlock6" aria-expanded="false" aria-controls="collapseBlock6")
+                        a.faq-link-subtitle(href="#") Can I pay yearly?
+                        img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
+                .row.justify-content-center
+                    .col-10.pl-0.pr-0
+                        #collapseBlock6.collapse
+                            .card.card-body.card-collapse-body
+                                | Yes. When you pay for Bugsnag annually, you'll receive a discount from the monthly cost. This option is available when you select a plan in your Bugsnag settings.
+                .row.pt-2.pb-2.justify-content-center
+                    .col-10.pl-0.pr-0
+                        .divider
+
+                .row.justify-content-center
+                    .col-10.d-flex.justify-content-between.pl-0.pr-0(data-toggle="collapse" href="#collapseBlock7" aria-expanded="false" aria-controls="collapseBlock7")
+                        a.faq-link-subtitle(href="#") What forms of payment do you accept?
+                        img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
+                .row.justify-content-center
+                    .col-10.pl-0.pr-0
+                        #collapseBlock7.collapse
+                            .card.card-body.card-collapse-body
+                                | We accept all major credit and debit cards: Visa, Mastercard, American Express, JCB, Discover and Diners Club. Payments are powered by Stripe.
+                .row.pt-2.pb-2.justify-content-center
+                    .col-10.pl-0.pr-0
+                        .divider
+
+                .row.justify-content-center
+                    .col-10.d-flex.justify-content-between.pl-0.pr-0(data-toggle="collapse" href="#collapseBlock8" aria-expanded="false" aria-controls="collapseBlock8")
+                        a.faq-link-subtitle(href="#") Do I have to sign a long-term contract?
+                        img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
+                .row.justify-content-center
+                    .col-10.pl-0.pr-0
+                        #collapseBlock8.collapse
+                            .card.card-body.card-collapse-body
+                                | No. You can pay monthly or annually.
+                .row.pt-2.pb-2.justify-content-center
+                    .col-10.pl-0.pr-0
+                        .divider
+
+                .row.justify-content-center
+                    .col-10.d-flex.justify-content-between.pl-0.pr-0(data-toggle="collapse" href="#collapseBlock9" aria-expanded="false" aria-controls="collapseBlock9")
+                        a.faq-link-subtitle(href="#") Can I cancel at any time?
+                        img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
+                .row.justify-content-center
+                    .col-10.pl-0.pr-0
+                        #collapseBlock9.collapse
+                            .card.card-body.card-collapse-body
+                                | Yes. After you cancel your account, you won't be charged again.
+                .row.pt-2.pb-2.justify-content-center
+                    .col-10.pl-0.pr-0
+                        .divider
+
+                .row.justify-content-center
+                    .col-10.d-flex.justify-content-between.pl-0.pr-0(data-toggle="collapse" href="#collapseBlock10" aria-expanded="false" aria-controls="collapseBlock10")
+                        a.faq-link-subtitle(href="#") Is Bugsnag free for open source applications?
+                        img.arrow-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819049a90e860_collapsed-930b7042.svg")
+                .row.justify-content-center
+                    .col-10.pl-0.pr-0
+                        #collapseBlock10.collapse
+                            .card.card-body.card-collapse-body: Yes Our #[a(href="#") open source page] has further details and instructions on how to apply for a free license.
+                .row.pt-2.pb-2.justify-content-center
+                    .col-10.pl-0.pr-0
+                        .divider
+
+        section.get-started-section
+            .container-fluid.pl-0.pr-0
+                .row.no-gutters
+                    .col-6(style="border-right: 1px solid #c6c6ca")
                         img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819651c90e79a_Divider%20Shapes.svg")
                         h2 Get started for free.
                         p Try all features for 14 days · No credit card required.
-                        a.btn.btn-primary.btn-lg(href="") Get started
+                        a.button-default.button-medium(href="") Get started
                     .col-6(style="padding-left: 60px")
                         img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819651c90e79a_Divider%20Shapes.svg")
                         h2 Get started for free.
                         p Try all features for 14 days · No credit card required.
-                        a.btn.btn-primary.btn-lg(href="") Get started
+                        a.button-default.button-medium(href="") Get started
         footer.footer
-            .container-fluid(style="padding-left: 0; padding-right: 0")
+            .container-fluid.pl-0.pr-0
                 .row.no-gutters
                     .col
                         .divider

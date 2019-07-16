@@ -58,7 +58,7 @@ BODY
   width 100%
   margin .5rem 0
   overflow hidden
-  border-top 1px solid #e9ecef
+  border-top 1px solid #f3f4fa;
 
 .sticky-block
   position sticky
@@ -66,11 +66,17 @@ BODY
   background #fff
   z-index 1
 
-.btn-medium
+
+.btn-lg
+  min-width 160px
+
+.button-medium
+  width 160px
+
+.button-default
   display flex
   position relative
   overflow hidden
-  min-width 160px
   padding-right 24px
   padding-left 24px
   padding-top 0
@@ -213,6 +219,8 @@ BODY
   display block
   position relative
   margin-top -300px
+  padding-left 30px
+  padding-right 30px
   .cards-menu-tabs
     text-align center
     padding-bottom 60px
@@ -394,13 +402,32 @@ BODY
   padding 100px 0 80px 0
   background #fbfaff
 
-.arrow-icon
-  transform translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg)
-  transform-style preserve-3d
-  height 17px
-  width 32px
+  .arrow-icon
+    transform translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg)
+    transform-style preserve-3d
+    height 17px
+    width 32px
+
+  .faq-link-subtitle
+    color rgb(0, 13, 71)
+    cursor pointer
+    font-size 20px
+    line-height 20px
+
+  .card-collapse-body
+    background-color #fbfaff
+    padding 40px 0 20px 0
+    border none
+    color rgb(66, 66, 78)
+    font-size 16px
+    font-weight 400
+    line-height 27px
 
 /* SECTION FAQ END */
+
+
+.get-started-section
+  padding 100px 30px
 
 
 /* FOOTER */
