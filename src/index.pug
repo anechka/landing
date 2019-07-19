@@ -79,7 +79,7 @@ html(lang="en")
                     p.text-center.hero-subtitle 3 minute installation · Try all features for 14 days · No credit card required
 
             .cards-container
-                .container-fluid.pl-0.pr-0
+                .container
                     .row
                         .col-12
                             .cards-menu-tabs
@@ -508,7 +508,7 @@ html(lang="en")
                     div.checkbox-img
                         img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
 
-                .row.padding-top-30.padding-bottom-60
+                .row.padding-top-30.padding-bottom-30
                     .col
                         .divider
 
@@ -652,29 +652,29 @@ html(lang="en")
                         .divider
 
         section.get-started-section
-            .container-fluid.pl-0.pr-0
-                .row.no-gutters
+            .container
+                .row
                     .col-6(style="border-right: 1px solid #c6c6ca")
                         img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819651c90e79a_Divider%20Shapes.svg")
-                        h2 Get started for free.
-                        p Try all features for 14 days · No credit card required.
+                        h2.get-started-subtitle Get started for free.
+                        p.get-started-text Try all features for 14 days · No credit card required.
                         a.button-default.button-medium(href="") Get started
                     .col-6(style="padding-left: 60px")
                         img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819651c90e79a_Divider%20Shapes.svg")
-                        h2 Get started for free.
-                        p Try all features for 14 days · No credit card required.
+                        h2.get-started-subtitle Get started for free.
+                        p.get-started-text Try all features for 14 days · No credit card required.
                         a.button-default.button-medium(href="") Get started
         footer.footer
             .container-fluid.pl-0.pr-0
                 .row.no-gutters
                     .col
-                        .divider
-                .row.no-gutters
-                    .col-2.d-flex.flex-column
+                        .divider.footer-divider
+                .footer-grid
+                    div
                         a(href="#")
                             img.footer-logo(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c7fab2b4e3feefc6bd8f0ce_5c7e8ad810414d05694fe4d8_asset%203.svg")
-                    .col-2.d-flex.flex-column
-                        h5(href="#") Product
+                    div.flex-column
+                        h5.footer-subtitle(href="#") Product
                         a(href="#") Stability Management
                         a(href="#") Integrations
                         a(href="#") On-Premise
@@ -682,22 +682,22 @@ html(lang="en")
                         a(href="#") Open Source
                         a(href="") Mobile Solution
                         a(href="") Web Solution
-                    .col-2.d-flex.flex-column
-                        h5 Resources
+                    div.flex-column
+                        h5.footer-subtitle Resources
                         a(href="#") Resource Library
                         a(href="#") Blog
                         a(href="#") Docs
                         a(href="#") Status
                         a(href="#") Contact
-                    .col-2.d-flex.flex-column
-                        h5 Company
+                    div.flex-column
+                        h5.footer-subtitle Company
                         a(href="#") About
                         a(href="#") Customers
                         a(href="#") Customer Stories
                         a(href="#") Jobs
                         a(href="#") Security
-                    .col-2.d-flex.flex-column
-                        h5 Platforms
+                    div.flex-column
+                        h5.footer-subtitle Platforms
                         a(href="#") JavaScript
                         a(href="#") React
                         a(href="#") React Native
@@ -708,13 +708,15 @@ html(lang="en")
                         a(href="#") PHP
                         a(href="#") Python
                         a(href="#") More...
-                    .col-2.d-flex
+
+                    div.footer-social-icons
                         a.footer-social-icon(href="#")
                             img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197cbe90e7a7_twitter-logo-silhouette.svg")
                         a.footer-social-icon(href="#")
                             img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819028c90e7a9_dribbble-logo.svg")
                         a.footer-social-icon(href="#")
                             img.img-fluid(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819f3ed90e7a8_github-logo.svg")
+
                 .row.no-gutters
                     .col
                         span © 2019 Bugsnag Inc.
