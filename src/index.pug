@@ -13,10 +13,10 @@ html(lang="en")
                     span.navbar-toggler-icon
                 #navbarCollapse.collapse.navbar-collapse
                     ul.navbar-nav.ml-auto
-                        li.nav-item.dropdown
-                            a#navbarDropdown1.nav-link.dropdown-toggle.header-nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        li.nav-item.dropdown#navbarDropdown1
+                            a.nav-link.dropdown-toggle.header-nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
                                 | Product
-                            .dropdown-menu.header-dropdown(aria-labelledby='navbarDropdown1')
+                            .dropdown-menu.header-dropdown(aria-labelledby='navbarDropdown1', id="menu-1")
                                 .content-dropdown-menu.d-flex
                                     .left-col-content
                                         a.dropdown-item.header-nav-link(href='#') Stability Management
@@ -29,10 +29,10 @@ html(lang="en")
                                         a.dropdown-item.header-nav-link(href='#') Security
                                         a.dropdown-item.header-nav-link(href='#') Why Bugsnag?
 
-                        li.nav-item.dropdown
-                            a#navbarDropdown2.nav-link.dropdown-toggle.header-nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        li.nav-item.dropdown#navbarDropdown2
+                            a.nav-link.dropdown-toggle.header-nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
                                 | Solutions
-                            .dropdown-menu(aria-labelledby='navbarDropdown2')
+                            .dropdown-menu.header-dropdown(aria-labelledby='navbarDropdown2', id="menu-2")
                                 .content-dropdown-menu.d-flex
                                     .left-col-content
                                         span.dropdown-item.dropdown-item-title By role:
@@ -44,10 +44,10 @@ html(lang="en")
                                         a.dropdown-item.header-nav-link(href='#') Web
                                         a.dropdown-item.header-nav-link(href='#') Mobile
 
-                        li.nav-item.dropdown
-                            a#navbarDropdown3.nav-link.dropdown-toggle.header-nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        li.nav-item.dropdown#navbarDropdown3
+                            a.nav-link.dropdown-toggle.header-nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
                                 | Customers
-                            .dropdown-menu(aria-labelledby='navbarDropdown3')
+                            .dropdown-menu.header-dropdown(aria-labelledby='navbarDropdown3', id="menu-3")
                                 .content-dropdown-menu.d-flex
                                     .left-col-content
                                         a.dropdown-item.header-nav-link(href='#') Customers
@@ -55,10 +55,10 @@ html(lang="en")
 
                         li.nav-item
                             a.nav-link.header-nav-link.link-without-dropdown(href='#') Pricing
-                        li.nav-item.dropdown
-                            a#navbarDropdown4.nav-link.dropdown-toggle.header-nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        li.nav-item.dropdown#navbarDropdown4
+                            a.nav-link.dropdown-toggle.header-nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
                                 | Resources
-                            .dropdown-menu(aria-labelledby='navbarDropdown4')
+                            .dropdown-menu.header-dropdown(aria-labelledby='navbarDropdown4', id="menu-4")
                                 .content-dropdown-menu.d-flex
                                     .left-col-content
                                         a.dropdown-item.header-nav-link(href='#') Resource Library
@@ -142,7 +142,8 @@ html(lang="en")
                                     .divider
                                     ul.card-list
                                         li
-                                            strong Lite features plus
+                                            strong Lite&nbsp
+                                            | features plus
                                         li
                                             img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
                                             span(data-toggle="tooltip" data-placement="right" title="Real-time stability score helps determine whether to build features or fix bugs.") Real-time application stability score
@@ -182,7 +183,8 @@ html(lang="en")
                                     .divider
                                     ul.card-list
                                         li
-                                            strong Standard features plus
+                                            strong Standard&nbsp
+                                            | features plus
                                         li
                                             img.card-list-icon-check(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
                                             span(data-toggle="tooltip" data-placement="right" title="Fast and unlimited support from our team of talented support engineers.") Priority support
@@ -342,7 +344,7 @@ html(lang="en")
                         img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
 
                     // Alerts and workflow integrations
-                    div.padding-top-30
+                    div.padding-top-30.sticky-block
                         img.pricing-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819582590e906_alerts-0dc92df3.svg")
                         span.pricing-title Alerts and workflow integrations
                     div.invisible
@@ -398,7 +400,7 @@ html(lang="en")
                         img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
 
                     // Administration, security, and data access
-                    div.padding-top-30
+                    div.padding-top-30.sticky-block
                         img.pricing-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819418f90e907_admin-70c0fe30.svg")
                         span.pricing-title Administration, security, and data access
                     div.invisible
@@ -461,7 +463,7 @@ html(lang="en")
                     div.checkbox-img
                         img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197d6f90e8a6_Tick.svg")
                     // Support and services
-                    div.padding-top-30
+                    div.padding-top-30.sticky-block
                         img.pricing-icon(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd08197eff90e7d9_support-edc7008a.svg")
                         span.pricing-title Support and services
                     div.invisible
@@ -661,9 +663,9 @@ html(lang="en")
                         a.button-default.button-medium(href="") Get started
                     .col-6(style="padding-left: 60px")
                         img(src="https://global-uploads.webflow.com/5c741219fd0819540590e785/5c741219fd0819651c90e79a_Divider%20Shapes.svg")
-                        h2.get-started-subtitle Get started for free.
-                        p.get-started-text Try all features for 14 days · No credit card required.
-                        a.button-default.button-medium(href="") Get started
+                        h2.get-started-subtitle Request a demo.
+                        p.get-started-text Get a customized platform walk through for your stack.
+                        a.button-default.button-medium(href="") Request a demo
         footer.footer
             .container-fluid.pl-0.pr-0
                 .row.no-gutters
@@ -719,11 +721,11 @@ html(lang="en")
 
                 .row.no-gutters
                     .col
-                        span © 2019 Bugsnag Inc.
-                        div
-                            a(href="") Terms of Service
+                        span.copyright © 2019 Bugsnag Inc.
+                        div.terms-service
+                            a.terms-link(href="") Terms of Service
                             span.dot-terms
-                            a(href="") Privacy Policy
+                            a.terms-link(href="") Privacy Policy
 
 
 

@@ -42,7 +42,6 @@ BODY
 .padding-bottom-30
   padding-bottom 30px
 
-
 .padding-bottom-60
   padding-bottom 60px
 
@@ -75,7 +74,7 @@ BODY
   min-width 160px
 
 .button-medium
-  width 160px
+  width 180px
 
 .button-default
   display flex
@@ -100,7 +99,7 @@ BODY
   border none
   text-decoration none
   &:hover
-    color #ced8fe
+    color #fff
     text-decoration none
 
 
@@ -125,6 +124,9 @@ BODY
   border 1px solid rgb(0, 13, 71)
   border-radius 4px
   color: rgb(0, 13, 71)
+  &:hover
+    text-decoration none
+    color #000d47
   @media(max-width: 768px)
     visibility hidden
 
@@ -157,12 +159,15 @@ BODY
       color #4442cb
 
 .header-dropdown
-  min-width 25rem
+  top 35px
   margin-right -10px
   margin-left -10px
   border none
   border-radius 0
   box-shadow 0 5px 14px -5px rgba(0,0,0, .26)
+
+#menu-1
+  min-width 24rem
   .left-col-content
     a:nth-child(2)
       padding-left 38px
@@ -174,7 +179,6 @@ BODY
   font-size 15px
   line-height 18px
   padding 10px 24px
-
 
   &::after
     display none
@@ -188,11 +192,18 @@ BODY
       border-bottom 0
       border-left .3em solid transparent
 
+  &:hover
+    color #4442cb
+    background-color transparent
+
 .dropdown-item-title
   font-size 13px
   line-height 20px
-  color rgb(142, 142, 150)
+  color #8e8e96;
   text-transform uppercase
+  &:hover
+    background-color transparent
+    color #8e8e96;
 
 /* HEADER NAVIGATION END */
 
@@ -365,7 +376,7 @@ BODY
       min-height 40px
       display flex
       align-items center
-      a
+      a:not(.btn-small)
         color rgb(66, 66, 78)
         font-size 15px
         line-height 20px
@@ -417,6 +428,9 @@ BODY
     cursor pointer
     font-size 20px
     line-height 20px
+    &:hover
+      text-decoration none
+      color #4949e4
 
   .card-collapse-body
     background-color #fbfaff
@@ -497,14 +511,31 @@ BODY
     line-height 20px
     margin-bottom 30px
 
+  .copyright
+    color #fff
+    font-size 12px
+    font-weight 400
+    line-height 18px
+
+  .terms-service
+    padding-top 5px
+    .terms-link
+      opacity .35
+      color #fff
+      font-size 12px
+      &:hover
+        opacity 1
+        color #ff5a60
+        text-decoration none
+
+    .dot-terms
+      width 2px
+      height 2px
+      margin-right 10px
+      margin-left 10px
+      background-color #4949e4
+      display inline-block
+      vertical-align: middle
+
 /* FOOTER END */
 
-
-.dot-terms
-  width 2px
-  height 2px
-  margin-top 2px
-  margin-right 10px
-  margin-left 10px
-  background-color #4949e4
-  display inline-block

@@ -1,11 +1,14 @@
 console.log("hello");
 
 $(function() {
-    $('li.dropdown').hover(function(){ //Open on hover
-            $('.dropdown-menu.header-dropdown').addClass("show");
-            console.log("jquery")
-        },
-        function(){ //Close when not hovered
-            $('.header-dropdown').removeClass("show");
-        });
+    for(let i = 1; i < 5; i++) {
+        $('li#navbarDropdown' + i ).hover(function(){ //Open on hover
+                $('#menu-' + i).addClass("show");
+                console.log("jquery")
+            },
+            function(){ //Close when not hovered
+                $('#menu-' + i).removeClass("show");
+            });
+    }
+
 });
