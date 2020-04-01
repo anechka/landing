@@ -30,11 +30,8 @@ BODY
   font-size 11.5px
   text-align left
 
-.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before, .tooltip.bs-tooltip-right .arrow::before
-  border-right-color #d5d5d5
-
-.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before, .tooltip.bs-tooltip-left .arrow::before
-  border-left-color #d5d5d5
+.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before, .tooltip.bs-tooltip-top .arrow::before
+  border-top-color #d5d5d5
 
 .padding-top-30
   padding-top 30px
@@ -45,8 +42,15 @@ BODY
 .padding-bottom-60
   padding-bottom 60px
 
+.padding-left-60
+  padding-left 60px
+
+
 .hide
   opacity 0
+
+.vertical-divider
+  border-right 1px solid #c6c6ca
 
 .section-subtitle
   margin-bottom 24px
@@ -66,7 +70,7 @@ BODY
 .sticky-block
   position sticky
   top 60px
-  background #fff
+  background #fffffff2
   z-index 1
 
 
@@ -227,6 +231,13 @@ BODY
   margin-bottom 16px
   margin-top 10px
   opacity 0.55
+  list-style disc
+  list-style-position inside
+
+  li:nth-of-type(1)
+    list-style  none
+  li
+    padding-right 10px
 
 /* CARDS */
 
@@ -258,6 +269,7 @@ BODY
     box-shadow 0 2px 11px 0 rgba(0,0,0,.09)
     text-align center
 
+
   .card-standard
     position relative
     min-height 680px
@@ -266,6 +278,9 @@ BODY
     margin-top -20px
     z-index 1
     padding-top 20px
+    @media(max-width 992px)
+      margin-top 20px
+      margin-bottom 20px
 
   .card-content
     display flex
@@ -499,9 +514,11 @@ BODY
       opacity .6
       -webkit-transition-property opacity
       transition-property opacity
+      @media(max-width 992px)
+        margin-right 3px
 
   .footer-divider
-    border-top 1px solid rgba(255, 255, 255, 0.13)
+    border-top 1px solid hsla(0,0%,100%,.13)
     margin-bottom 30px
 
   .footer-subtitle
