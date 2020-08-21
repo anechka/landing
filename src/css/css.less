@@ -19,7 +19,8 @@ BODY {
   .default-font-family;
   background-color: azure;
   font-family: Source Sans Pro, sans-serif;
-  font-size: 15px;
+  font-size: 20px;
+  color: #616161;
 }
 
 h1 {
@@ -32,6 +33,7 @@ h1 {
   font-size: 35px;
   font-weight: 600;
   letter-spacing: 10px;
+  color: #000;
 }
 
 h2 {
@@ -40,6 +42,13 @@ h2 {
   font-size: smaller;
   color: #757575;
 }
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
 
 .page-wrapper {
   background: lightsteelblue;
@@ -82,21 +91,29 @@ h2 {
     text-align: right;
   }
 
-  .company-name, .degree {
+  .company, .degree {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .company-name, .degree-description  {
     text-transform: uppercase;
     font-family: Open Sans,sans-serif;
     color: #424242;
+    font-weight: bold;
     margin-bottom: 20px;
     margin-top: 20px;
-
-    p {
-      color: #616161
-    }
   }
 
   .position {
-    color: #616161;
     font-style: italic;
+  }
+
+  .contact-info {
+    a {
+      margin-right: 5px;
+      color: #616161;
+    }
   }
 
   .skills-info {
@@ -107,17 +124,36 @@ h2 {
     margin-bottom: 10px;
   }
 
+  .skill {
+    flex-basis: 0;
+  }
+
   .skill-bar {
     background: #e0e0e0;
     height: 8px;
     border-radius: 3px;
-    flex-basis: 80%;
+    flex-basis: 70%;
     .level {
-      width: 90%;
       background: #757575;
       height: 100%;
       border-bottom-left-radius: 3px;
       border-top-left-radius: 3px;
+    }
+
+    .level-html {
+      width: 90%;
+    }
+
+    .level-css {
+      width: 95%;
+    }
+
+    .level-js {
+      width: 70%;
+    }
+
+    .level-docker {
+      width: 60%;
     }
   }
 
