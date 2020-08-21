@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/anechka/landing#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "less": "^3.12.2",
     "parcel": "^1.12.3",
     "pug": "^3.0.0"
