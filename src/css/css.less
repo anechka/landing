@@ -18,18 +18,16 @@ HTML {
 BODY {
   .default-font-family;
   background-color: azure;
-  font-family: Source Sans Pro, sans-serif;
   font-size: 20px;
   color: #616161;
 }
 
 h1 {
-  border: 1px solid #000;
+  border: 1px solid silver;
   text-transform: uppercase;
   padding: 10px 20px;
   margin-top: 80px;
   margin-bottom: 40px;
-  font-family: Open Sans,sans-serif;
   font-size: 35px;
   font-weight: 600;
   letter-spacing: 10px;
@@ -66,7 +64,6 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*justify-content: center;*/
 }
 
 .personal-photo {
@@ -97,8 +94,6 @@ h3 {
   }
 
   .company-name, .degree-description  {
-    text-transform: uppercase;
-    font-family: Open Sans,sans-serif;
     color: #424242;
     font-weight: bold;
     margin-bottom: 20px;
@@ -110,6 +105,7 @@ h3 {
   }
 
   .contact-info {
+    margin-bottom: 5px;
     a {
       margin-right: 5px;
       color: #616161;
@@ -122,10 +118,6 @@ h3 {
     align-items: center;
     padding-right: 30px;
     margin-bottom: 10px;
-  }
-
-  .skill {
-    flex-basis: 0;
   }
 
   .skill-bar {
@@ -141,15 +133,35 @@ h3 {
     }
 
     .level-html {
-      width: 90%;
+      width: 85%;
     }
 
     .level-css {
-      width: 95%;
+      width: 85%;
+    }
+
+    .level-less-sass {
+      width: 80%;
+    }
+
+    .level-bootstrap {
+      width: 85%;
     }
 
     .level-js {
       width: 70%;
+    }
+
+    .level-nodejs {
+      width: 60%;
+    }
+
+    .level-vue {
+      width: 75%;
+    }
+
+    .level-django {
+      width: 60%;
     }
 
     .level-docker {
